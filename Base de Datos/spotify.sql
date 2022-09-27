@@ -1,15 +1,15 @@
-drop database if exists Top_Spotify;
-create database Top_Spotify;
-use Top_Spotify;
+drop database if exists Bonus_Track;
+create database Bonus_Track;
+use Bonus_Track;
 create table Top_Spotify(
-	ID int primary key,
-	TITULO varchar(200),
-	ARTISTA varchar(200),
-	GENERO varchar(200),
-	ANO int
+	id int,
+    titulo varchar(150),
+    artista varchar(150),
+    genero varchar(50),
+    anio int
 );
 insert into Top_Spotify 
-(ID,TITULO,ARTISTA,GENERO,ANO) values 
+(ID,TITULO,ARTISTA,GENERO,ANIO) values 
 (2,'Love The Way You Lie','Eminem','Detroit Hip Hop',2010),
 (3,'TiK ToK','Kesha','Dance Pop',2010),
 (4,'Bad Romance','Lady Gaga','Dance Pop',2010),
